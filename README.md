@@ -3,26 +3,6 @@
 ## 📘 Descrição Geral
 Este projeto tem como objetivo desenvolver um **banco de dados relacional completo** para uma **editora de livros**, abordando todas as etapas do processo editorial — desde o cadastro de autores e obras até o controle de estoque, vendas e pedidos.  
 O sistema busca garantir a **integração das informações**, **facilidade de consulta** e **eficiência operacional** para a gestão da empresa.
-
----
-
-## 📋 O que foi pedido
-
-De acordo com os requisitos do projeto, foram desenvolvidos:
-
-- Minimundo com descrição detalhada do domínio de negócio.
-- Modelagem Entidade-Relacionamento (MER).
-- Modelagem Relacional (MR).
-- Documento explicativo com imagens dos diagramas.
-- Scripts SQL organizados e documentados, incluindo:
-- Criação de tabelas e views (DDL).
-- Alterações nas tabelas (mínimo 10 ALTERs).
-- Exclusão de todas as tabelas, views e dependências.
-- Inserção de dados (mínimo 20 registros por tabela).
-- Atualizações e exclusões de dados (mínimo 20 DML).
-- Relatórios/consultas importantes (mínimo 20 SELECTs com JOINs e Subselects).
-- Criação de views para relatórios (mínimo 10).
-
 ---
 
 ## 🏛️ Minimundo – Editora
@@ -68,6 +48,25 @@ Cada pedido possui um **ID**, **data da transação**, **status**, **forma de pa
 Um pedido pode conter **vários livros**, e cada livro pode aparecer em **diversos pedidos**, criando a entidade associativa **Livros_Pedidos**, que também guarda a **quantidade solicitada**.
 
 ---
+
+## 📋 O que foi pedido
+
+De acordo com os requisitos do projeto, foram desenvolvidos:
+
+- Minimundo com descrição detalhada do domínio de negócio.
+- Modelagem Entidade-Relacionamento (MER).
+- Modelagem Relacional (MR).
+- Documento explicativo com imagens dos diagramas.
+- Scripts SQL organizados e documentados, incluindo:
+- Criação de tabelas e views (DDL).
+- Alterações nas tabelas (mínimo 10 ALTERs).
+- Exclusão de todas as tabelas, views e dependências.
+- Inserção de dados (mínimo 20 registros por tabela).
+- Atualizações e exclusões de dados (mínimo 20 DML).
+- Relatórios/consultas importantes (mínimo 20 SELECTs com JOINs e Subselects).
+- Criação de views para relatórios (mínimo 10).
+
+--
 
 ## 🧩 O que colocamos além do pedido
 Além das entidades solicitadas inicialmente, foram adicionadas:
