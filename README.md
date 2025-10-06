@@ -79,7 +79,8 @@ Além das entidades solicitadas inicialmente, foram adicionadas:
 ---
 
 ## 🧮 MER (Modelo Entidade-Relacionamento)
-O **MER** (presente na pasta `/images/EDITORA MER VERSÃO DEFINITIVA.jpg`) representa graficamente todas as entidades, atributos e relacionamentos descritos acima.  
+O **MER** ![MER da Editora](images/EDITORA%20MER%20VERS%C3%83O%20DEFINITIVA.jpg) 
+representa graficamente todas as entidades, atributos e relacionamentos descritos acima.  
 
 Principais relacionamentos:
 - *Autor* escreve *Livro* (n:n)  
