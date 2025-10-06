@@ -10,18 +10,18 @@ O sistema busca garantir a **integração das informações**, **facilidade de c
 
 De acordo com os requisitos do projeto, foram desenvolvidos:
 
-Minimundo com descrição detalhada do domínio de negócio.
-Modelagem Entidade-Relacionamento (MER).
-Modelagem Relacional (MR).
-Documento explicativo com imagens dos diagramas.
-Scripts SQL organizados e documentados, incluindo:
-Criação de tabelas e views (DDL).
-Alterações nas tabelas (mínimo 10 ALTERs).
-Exclusão de todas as tabelas, views e dependências.
-Inserção de dados (mínimo 20 registros por tabela).
-Atualizações e exclusões de dados (mínimo 20 DML).
-Relatórios/consultas importantes (mínimo 20 SELECTs com JOINs e Subselects).
-Criação de views para relatórios (mínimo 10).
+- Minimundo com descrição detalhada do domínio de negócio.
+- Modelagem Entidade-Relacionamento (MER).
+- Modelagem Relacional (MR).
+- Documento explicativo com imagens dos diagramas.
+- Scripts SQL organizados e documentados, incluindo:
+- Criação de tabelas e views (DDL).
+- Alterações nas tabelas (mínimo 10 ALTERs).
+- Exclusão de todas as tabelas, views e dependências.
+- Inserção de dados (mínimo 20 registros por tabela).
+- Atualizações e exclusões de dados (mínimo 20 DML).
+- Relatórios/consultas importantes (mínimo 20 SELECTs com JOINs e Subselects).
+- Criação de views para relatórios (mínimo 10).
 
 ---
 
