@@ -3,6 +3,7 @@
 ## 📘 Descrição Geral
 Este projeto tem como objetivo desenvolver um **banco de dados relacional completo** para uma **editora de livros**, abordando todas as etapas do processo editorial — desde o cadastro de autores e obras até o controle de estoque, vendas e pedidos.  
 O sistema busca garantir a **integração das informações**, **facilidade de consulta** e **eficiência operacional** para a gestão da empresa.
+
 ---
 
 ## 🏛️ Minimundo – Editora
