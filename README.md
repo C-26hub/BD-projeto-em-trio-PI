@@ -7,12 +7,21 @@ O sistema busca garantir a **integração das informações**, **facilidade de c
 ---
 
 ## 📋 O que foi pedido
-O enunciado do projeto solicitava:
-- A criação de um **modelo de banco de dados abrangente** para uma editora;
-- A identificação das **principais entidades** envolvidas;
-- A definição de seus **atributos** e **relacionamentos**;
-- A elaboração de um **minimundo** descritivo;
-- O desenvolvimento de um **MER (Modelo Entidade-Relacionamento)** correspondente.
+
+De acordo com os requisitos do projeto, foram desenvolvidos:
+
+Minimundo com descrição detalhada do domínio de negócio.
+Modelagem Entidade-Relacionamento (MER).
+Modelagem Relacional (MR).
+Documento explicativo com imagens dos diagramas.
+Scripts SQL organizados e documentados, incluindo:
+Criação de tabelas e views (DDL).
+Alterações nas tabelas (mínimo 10 ALTERs).
+Exclusão de todas as tabelas, views e dependências.
+Inserção de dados (mínimo 20 registros por tabela).
+Atualizações e exclusões de dados (mínimo 20 DML).
+Relatórios/consultas importantes (mínimo 20 SELECTs com JOINs e Subselects).
+Criação de views para relatórios (mínimo 10).
 
 ---
 
