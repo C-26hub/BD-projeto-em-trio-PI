@@ -127,4 +127,5 @@ O **MER** final garante consistência, escalabilidade e aderência às regras do
 ## 👥 Equipe
 - **Kallyne Victória Gomes de Melo** – kallynemelo2020@gmail.com   
 - **Maria Cecília de Lima e Silva** – cecilmari33@gmail.com  
-- **Maria Eduarda Pereira Vilarim** – pereira2020mv@gmail.com   
+- **Maria Eduarda Pereira Vilarim** – vilarim051@gmail.com
+   
