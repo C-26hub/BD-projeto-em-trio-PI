@@ -450,7 +450,10 @@ INSERT INTO Livros_Pedidos (id_pedido, ISBN, quantidade) VALUES
 (8,'9780000000022',1),
 (9,'9780000000021',1),
 (11,'9780000000009',1),
-(12,'9780000000014',1);
+(12,'9780000000014',1) 
+AS new_vals
+ON DUPLICATE KEY UPDATE
+Livros_Pedidos.quantidade = Livros_Pedidos.quantidade + new_vals.quantidade;
 
 -- Fim dos INSERTs 
 
