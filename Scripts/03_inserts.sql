@@ -455,7 +455,3 @@ AS new_vals
 ON DUPLICATE KEY UPDATE
 Livros_Pedidos.quantidade = Livros_Pedidos.quantidade + new_vals.quantidade;
 
--- Fim dos INSERTs 
-
-
-SELECT * from Livros_Pedidos; 
