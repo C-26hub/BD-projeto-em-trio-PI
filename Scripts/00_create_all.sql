@@ -1,11 +1,11 @@
--- Cria banco e usa
-CREATE DATABASE IF NOT EXISTS editoranova;
+-- Cria banco e usa --
+CREATE DATABASE editoranova;
 USE editoranova;
 
 -- =========================
 -- Tabela de Departamentos
 -- =========================
-CREATE TABLE IF NOT EXISTS Departamento (
+CREATE TABLE Departamento (
     id_dep INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     nome_dep VARCHAR(100) NOT NULL UNIQUE,
     desc_atv TEXT
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS Departamento (
 -- =========================
 -- Tabela de Funcionários
 -- =========================
-CREATE TABLE IF NOT EXISTS Funcionarios (
+CREATE TABLE Funcionarios (
     cpf_func VARCHAR(11) NOT NULL PRIMARY KEY,
     nome_func VARCHAR(255) NOT NULL,
     cargo VARCHAR(100),
@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS Funcionarios (
 -- =========================
 -- Tabela de Clientes
 -- =========================
-CREATE TABLE IF NOT EXISTS Cliente (
+CREATE TABLE Cliente (
     id_cliente INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     nome_cli VARCHAR(255) NOT NULL,
     endereco_cli VARCHAR(255),
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS Cliente (
 -- =========================
 -- Tabela de Autores
 -- =========================
-CREATE TABLE IF NOT EXISTS Autores (
+CREATE TABLE Autores (
     id_autor INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100),
     biografia TEXT, 
@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS Autores (
 -- =========================
 -- Tabela de Livros
 -- =========================
-CREATE TABLE IF NOT EXISTS Livro (
+CREATE TABLE Livro (
     ISBN VARCHAR(13) PRIMARY KEY, 
     titulo VARCHAR(255) NOT NULL,
     editora VARCHAR(100),
@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS Livro (
 );
 
 -- Tabela Livro_Autor (N:N)
-CREATE TABLE IF NOT EXISTS Livro_Autor (
+CREATE TABLE Livro_Autor (
     ISBN VARCHAR(13) NOT NULL,
     id_autor INT NOT NULL,
     PRIMARY KEY (ISBN, id_autor),
@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS Livro_Autor (
 -- =========================
 -- Tabela de Exemplares
 -- =========================
-CREATE TABLE IF NOT EXISTS Exemplares (
+CREATE TABLE Exemplares (
     n_serie INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     status ENUM('disponivel', 'indisponivel', 'reservado', 'danificado') NOT NULL DEFAULT 'disponivel', 
     localizacao_exemplar VARCHAR(45),
@@ -87,12 +87,12 @@ CREATE TABLE IF NOT EXISTS Exemplares (
 -- =========================
 -- Tabela de Palavras-chave
 -- =========================
-CREATE TABLE IF NOT EXISTS Palavra_Chave (
+CREATE TABLE Palavra_Chave (
     codigo_palavra INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     desc_palavra VARCHAR(255) NOT NULL UNIQUE
 );
 
-CREATE TABLE IF NOT EXISTS Livro_PalavraChave (
+CREATE TABLE Livro_PalavraChave (
     ISBN VARCHAR(13) NOT NULL,
     codigo_palavra INT NOT NULL,
     PRIMARY KEY (ISBN, codigo_palavra),
@@ -103,12 +103,12 @@ CREATE TABLE IF NOT EXISTS Livro_PalavraChave (
 -- =========================
 -- Tabela de Áreas de Conhecimento
 -- =========================
-CREATE TABLE IF NOT EXISTS Areas_Conhecimento (
+CREATE TABLE Areas_Conhecimento (
     codigo_area INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     desc_area VARCHAR(255) NOT NULL UNIQUE
 );
 
-CREATE TABLE IF NOT EXISTS Livro_AreaConhecimento (
+CREATE TABLE Livro_AreaConhecimento (
     ISBN VARCHAR(13) NOT NULL,
     codigo_area INT NOT NULL,
     PRIMARY KEY (ISBN, codigo_area),
@@ -119,7 +119,7 @@ CREATE TABLE IF NOT EXISTS Livro_AreaConhecimento (
 -- =========================
 -- Tabela de Pedidos de Vendas
 -- =========================
-CREATE TABLE IF NOT EXISTS Pedidos_Vendas (
+CREATE TABLE Pedidos_Vendas (
     id_pedido INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     data_transacao DATETIME NOT NULL,
     status_pedido VARCHAR(50) NOT NULL,
@@ -133,7 +133,7 @@ CREATE TABLE IF NOT EXISTS Pedidos_Vendas (
 -- =========================
 -- Tabela de Itens dos Pedidos
 -- =========================
-CREATE TABLE IF NOT EXISTS Livros_Pedidos (
+CREATE TABLE Livros_Pedidos (
     id_pedido INT NOT NULL,
     ISBN VARCHAR(13) NOT NULL,
     quantidade INT NOT NULL,
