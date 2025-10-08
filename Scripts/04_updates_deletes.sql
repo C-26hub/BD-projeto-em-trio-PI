@@ -43,7 +43,12 @@ DELETE FROM Exemplares WHERE n_serie=5;
 DELETE FROM Livro_PalavraChave WHERE codigo_palavra=30;
 DELETE FROM Palavra_Chave WHERE codigo_palavra=30;
 
--- 14) Remover cliente inativo
+-- 14) Remover cliente inativo 
+DELETE FROM Livros_Pedidos
+WHERE id_pedido IN (
+    SELECT id_pedido FROM Pedidos_Vendas WHERE id_cliente=30
+);
+DELETE FROM Pedidos_Vendas WHERE id_cliente=30;
 DELETE FROM Cliente WHERE id_cliente=30;
 
 -- 15) Remover vendedor que saiu
@@ -64,4 +69,6 @@ DELETE FROM Exemplares WHERE ISBN='9780000000006';
 -- 20) Excluir livro não mais publicado (após checar FK)
 DELETE FROM Livros_Pedidos WHERE ISBN='9780000000006';
 DELETE FROM Livro_Autor WHERE ISBN='9780000000006';
-DELETE FROM Livro WHERE ISBN='9780000000006';
+DELETE FROM Livro_AreaConhecimento WHERE ISBN = '9780000000006';
+DELETE FROM Livro_PalavraChave WHERE ISBN = '9780000000006';
+DELETE FROM Livro WHERE ISBN='9780000000006'; 
